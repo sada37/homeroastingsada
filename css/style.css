@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+/* color common */
+.basecolor #EBE084 {
+  color: #EBE084;
+}
+
+.maincolor #D74840 {
+  color: #D74840;
+}
+
+.subcolor #B2E5E6 {
+  color: #B2E5E6;
+}
+
+.base-bgcolor #EBE084 {
+  background-color: #EBE084;
+}
+
+.main-color #D74840 {
+  background-color: #D74840;
+}
+
+.sub-bgcolor #B2E5E6 {
+  background-color: #B2E5E6;
+}
+
+/* common */
+
+body {
+  margin: 0;
+  background-color: #EBE084;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
+/* header */
+
+h1 {
+  margin: 0;
+}
+
+.top-nav {
+  display: none;
+}
+
+.top-title {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #D74840;
+  z-index: 3;
+}
+
+/* hero-area */
+
+.hero-area {
+  margin-top: 64px;
+  height: 400px;
+  position: relative;
+}
+
+.top-read {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  z-index: 2;
+  color: #B2E5E6;
+  font-weight: bold;
+  font-size: clamp(20px, 5vw, 32px);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  animation: switch 20s infinite;
+}
+
+.img1 {
+  background: url(../img/ogasuta458A7878_TP_V.jpg) center/cover;
+  animation-delay: 0s;
+}
+
+.img2 {
+  background: url(../img/ogasuta458A7941_TP_V.jpg) center/cover;
+  animation-delay: 5s;
+}
+
+.img3 {
+  background: url(../img/rinmon130303_TP_V.jpg) center/cover;
+  animation-delay: 10s;
+}
+
+.img4 {
+  background: url(../img/tyler-nix-BYGuAQWHdVM-unsplash.jpg) center/cover;
+  animation-delay: 15s;
+}
+
+
+@keyframes switch {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* sp-top-nav */
+#open-menu {
+  display: none;
+}
+
+h1 {
+  margin: 4px 0 8px 16px;
+  height: 64px;
+}
+
+h1>img {
+  width: 80px;
+}
+
+.sp-top-nav {
+  margin: 16px;
+}
+
+.open-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background: url(../img/sp-nav-icon.png) center/cover;
+  z-index: 2;
+}
+
+.open-menu-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.open-menu-content {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 500px;
+  background: #D74840;
+  transition: 0.5s;
+}
+
+.open-menu-content > img{
+padding: 16px 0 16px 16px;
+}
+
+.open-menu-content>ul {
+  padding-left: 16px;
+}
+.open-menu-content>ul>li a {
+  color:#B2E5E6;
+}
+
+#open-menu:checked~.open-menu-bg {
+  display: block;
+}
+
+#open-menu:checked~.open-menu-btn {
+  background: #D74840 url(../img/ノーマルの太さのバツアイコン.png)center/cover;
+}
+
+#open-menu:checked~.open-menu-content {
+  left: 0;
+}
+
+
+/* main-contents */
+main {
+  margin-top: 48px;
+}
+
+h2 {
+  text-align: center;
+  padding: 8px 0 8px 16px;
+  margin: 0 auto 32px;
+}
+
+.item-content > h3 {
+  margin: 8px 0;
+}
+
+/* delicious */
+.delicious-content {
+  position: relative;
+  padding: 32px 0;
+}
+
+.delicious-content > h3 {
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  color: #555;
+  padding: 8px 0 8px 16px;
+  background: #B2E5E6;
+  width: 60%;
+}
+
+
+
+
+.delicious-content > p {
+  margin: 8px 16px 8px;
+}
+
+.d-img {
+  width: 100%;
+  height: 240px;
+  vertical-align: bottom;
+}
+
+.d-img.img1 {
+  display: inline-block;
+  width: 50%;
+  background: url(../img/colombia-4919360_1920.jpg) center/cover;
+}
+
+.d-img.img2 {
+  display: inline-block;
+  width: 50%;
+  background: url(../img/mariliz-lopez--4hu4CU1T_k-unsplash.jpg) center/cover;
+}
+
+.d-img.img3 {
+  background: url(../img/tyler-nix-BYGuAQWHdVM-unsplash.jpg) center/cover;
+}
+
+
+
+.d-img.img4 {
+  background: url(../img/alin-luna-fHZYP7QR8NI-unsplash.jpg) center/cover;
+}
+
+
+/* products */
+/* グリッドレイアウトで並べる */
+/* スマホ版はタテ2列 デスクトップは３列 */
+.products {
+  padding: 0 0 48px 0;
+}
+
+
+.beans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  margin: 0 16px;
+}
+
+.items {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.sub-text {
+  margin: 4px 0 0 4px;
+}
+
+.item-content {
+  margin: 8px 0 0;
+}
+
+.item-content > h3 {
+  color: #333;
+}
+
+.items > div {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.item1 {
+  background: url(../img/AdobeStock_480080917.jpeg) center/cover;
+}
+
+.item1 > div {
+  background: #f36a62;
+}
+
+.item2 {
+  background: url(../img/colombia-4919360_1920.jpg) center/cover;
+}
+
+.item2 > div {
+  background: #d74840;
+}
+
+.item3 {
+  background: url(../img/AdobeStock_487709279.jpeg) center/cover;
+}
+
+.item3 > div {
+  background: #a74840;
+}
+
+.item4 {
+  background: url(../img/nousnou-iwasaki-myPzH34VYK4-unsplash.jpg) center/cover;
+}
+
+.item4 > div {
+  background: #B2E5E6;
+}
+
+.section-footer {
+  margin: 32px auto 0;
+  text-align: center;
+}
+
+.section-footer > a {
+  padding: 12px;
+  background: #B2E5E6;
+}
+
+/* news */
+.news {
+  padding: 0 0 32px 0;
+}
+
+.news-list {
+  margin: 0 16px 0;
+}
+
+.news-list > li {
+  margin: 0;
+  border-bottom: 1px solid #D74840;
+}
+
+.news-list > li:first-child {
+  border-top: 1px solid #D74840;
+}
+
+.news-list > li > a {
+  display: inline-block;
+  padding: 16px 0 16px 8px;
+}
+
+.news-category {
+  background: #B2E5E6;
+}
+
+/* footer */
+
+footer {
+  background: #D74840;
+  padding: 16px 16px;
+}
+
+.access {
+  padding: 0 16px;
+}
+
+.access > dl > dt {
+  color: #D74840;
+  margin-top: 8px;
+}
+
+.access > dl > dd {
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #D74840;
+}
+
